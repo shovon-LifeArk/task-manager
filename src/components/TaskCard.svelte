@@ -28,7 +28,7 @@
     <p class="task-description">{task.description}</p>
   {/if}
 
-  <time class="task-created" datetime={task.createdAt}>Created: {createdAtLabel}</time>
+  <time class="task-created" datetime={task.createdAt}>Created at: {createdAtLabel}</time>
 
   <div class="task-card-footer">
     <span class="task-status">Status: {task.status}</span>
