@@ -12,10 +12,9 @@
 
   let createdAtLabel = $derived(
     new Date(task.createdAt).toLocaleString('en-US', {
-      timeZone: 'UTC',
       dateStyle: 'medium',
       timeStyle: 'short',
-    }) + ' UTC',
+    }),
   );
 </script>
 
