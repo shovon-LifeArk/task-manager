@@ -7,6 +7,7 @@ export const sampleTasks: Task[] = [
     description: 'Create the repository and add the initial project files.',
     priority: 'High',
     status: 'Done',
+    createdAt: '2026-10-12T09:15:00.000Z',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const sampleTasks: Task[] = [
     description: 'Sketch a simple layout for the landing page hero and navigation.',
     priority: 'Medium',
     status: 'To Do',
+    createdAt: '2026-10-13T14:30:00.000Z',
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ export const sampleTasks: Task[] = [
     description: 'Document the steps a new team member needs to get started.',
     priority: 'Low',
     status: 'To Do',
+    createdAt: '2026-10-14T08:45:00.000Z',
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ export const sampleTasks: Task[] = [
     description: 'Show a helpful message when the email address is invalid.',
     priority: 'High',
     status: 'To Do',
+    createdAt: '2026-10-15T16:20:00.000Z',
   },
   {
     id: 5,
@@ -35,6 +39,7 @@ export const sampleTasks: Task[] = [
     description: 'Add the upcoming sprint review and planning meetings.',
     priority: 'Low',
     status: 'Done',
+    createdAt: '2026-10-16T11:05:00.000Z',
   },
   {
     id: 6,
@@ -42,5 +47,6 @@ export const sampleTasks: Task[] = [
     description: 'Go through the open pull requests and leave feedback.',
     priority: 'Medium',
     status: 'To Do',
+    createdAt: '2026-10-17T13:50:00.000Z',
   },
 ];

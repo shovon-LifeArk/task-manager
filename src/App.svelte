@@ -11,7 +11,12 @@
   let doneTasks = $derived(tasks.filter((task) => task.status === 'Done'));
 
   function addTask(newTask: NewTask) {
-    tasks.push({ ...newTask, id: nextId, status: 'To Do' });
+    tasks.push({
+      ...newTask,
+      id: nextId,
+      status: 'To Do',
+      createdAt: new Date().toISOString(),
+    });
     nextId += 1;
   }
 

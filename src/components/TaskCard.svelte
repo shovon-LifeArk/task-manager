@@ -9,6 +9,14 @@
   let { task, onToggle }: Props = $props();
 
   let isDone = $derived(task.status === 'Done');
+
+  let createdAtLabel = $derived(
+    new Date(task.createdAt).toLocaleString('en-US', {
+      timeZone: 'UTC',
+      dateStyle: 'medium',
+      timeStyle: 'short',
+    }) + ' UTC',
+  );
 </script>
 
 <article class="task-card" class:task-card-done={isDone}>
@@ -20,6 +28,8 @@
   {#if task.description}
     <p class="task-description">{task.description}</p>
   {/if}
+
+  <time class="task-created" datetime={task.createdAt}>Created: {createdAtLabel}</time>
 
   <div class="task-card-footer">
     <span class="task-status">Status: {task.status}</span>

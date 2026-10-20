@@ -218,6 +218,11 @@ p {
   font-size: 0.875rem;
 }
 
+.task-created {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
 .task-card-footer {
   display: flex;
   flex-wrap: wrap;
